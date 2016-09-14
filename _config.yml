@@ -1,0 +1,22 @@
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Bouke Haarsma
+tagline:          blog
+description:      Collection of articles and references about programming, computers and related.
+url:              http://bouke.github.io
+baseurl:          /
+
+author:
+  name:           'Bouke Haarsma'
+  url:            https://twitter.com/BoukeHaarsma
+
+paginate:         5
+
+exclude: [vendor]
+timezone: Europe/Amsterdam
+
+livereload: true
