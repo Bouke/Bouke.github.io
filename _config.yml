@@ -14,7 +14,7 @@ author:
   name:           'Bouke Haarsma'
   url:            https://twitter.com/BoukeHaarsma
 
-paginate:         5
+paginate:         2
 
 exclude: [vendor]
 timezone: Europe/Amsterdam
