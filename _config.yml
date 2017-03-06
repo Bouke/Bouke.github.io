@@ -16,6 +16,14 @@ author:
 
 paginate:         2
 
+featured:
+  - SwiftInitializerGenerator
+  - django-two-factor-auth
+  - django-user-sessions
+  - HAP
+  - SRP
+  - Lark
+
 exclude: [vendor]
 timezone: Europe/Amsterdam
 
