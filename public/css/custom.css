@@ -1,0 +1,9 @@
+a {
+    /*position: relative;*/
+}
+a[href^="http://"]:after, 
+a[href^="https://"]:after {
+    content: " \f08e ";
+    font-family: FontAwesome;
+    font-size: .6em;
+}
