@@ -5,6 +5,7 @@ permalink: blog/2009/11/04/preventing-sql-injection-with-parametrized-queries/
 ---
 
 <p>Still using magic quotes, or using addslashes to add slashes all $_POST and $_GET variables to prevent SQL Injection? Using magic quotes is considered <a href="http://arpad.co.uk/2008/09/the-adventure-of-php-and-the-magic-quotes/">not</a> <a href="http://www.sitepoint.com/blogs/2005/03/02/magic-quotes-headaches/">a</a> <a href="http://mordred.niama.net/blog/?p=122">good</a> <a href="http://nedbatchelder.com/blog/200310/php_and_magic_quotes.html">idea</a>, and using addslashes will also certainly drive you insane.</p>
+
 <h1>Parameterized statements</h1>
 <blockquote><p>To protect against SQL injection, user input must not directly be embedded in SQL statements. Instead, parameterized statements must be used (preferred), or user input must be carefully escaped or filtered. With most development platforms, parameterized statements can be used that work with parameters (sometimes called placeholders or bind variables) instead of embedding user input in the statement. In many cases, the SQL statement is fixed. The user input is then assigned (bound) to a parameter.<br />
 From: <a href="http://en.wikipedia.org/wiki/SQL_injection#Preventing_SQL_injection">Wikipedia</a></p></blockquote>

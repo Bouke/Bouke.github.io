@@ -4,7 +4,6 @@ title: Improve DNS decoding robustness through fuzzing
 ---
 
 ## Forced unwrapping results in crashes (d0h!)
-
 In order to implement Bonjour in Swift (for use on Linux), I needed a way to marshall / unmarshall DNS queries. I have written the [DNS](https://github.com/Bouke/DNS) library to do this. However sometimes the code would crash the whole application if the input was either incorrect or unsupported. I'd written the library mostly focused on the success path, not taking into account the possibilities of error. This meant that my Swift code was riddled with forced unwrapping of `Optional`s and  `precondition` that would segfault whenever the input didn't match expectations.
 
 After making most of the methods throwable;

@@ -5,6 +5,7 @@ permalink: blog/2009/11/11/optimizing-select-from-with-mysql_field_table-—-spe
 ---
 
 <p>In my previous post, <a href="/blog/2009/11/01/optimizing-select-from-with-mysql_field_table/">Optimizing SELECT * FROM with mysql_field_table()</a>, I ended with the promise to publish some speed impact results with you. I found it hard to come up with a good measure of speed impact. On the one hand, there is the speed degradation as extra overhead is added. On the other hand, speed is improved as you execute less database queries.<span id="more-53"></span></p>
+
 <h1>ApacheBench</h1>
 <p>ApacheBench was used for measuring the performance of the different approaches. A total of 1000 requests were executed, and then the mean time of response calculated.</p>
 <blockquote><p><em>ab</em> is a tool for benchmarking your Apache Hypertext Transfer Protocol (HTTP) server. It is designed to give you an impression of how your current Apache installation performs. This especially shows you how many requests per second your Apache installation is capable of serving.</p>

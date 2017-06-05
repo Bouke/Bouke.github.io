@@ -6,6 +6,7 @@ permalink: blog/2009/11/01/optimizing-select-from-with-mysql_field_table/
 
 <p>Creating your own data access layer, can be quite some work. After some time, you will tackle the basics of querying the database and parsing the results into objects. Each query only retrieves a set of data from a single table, so you push the code to production like I did.</p>
 <p>Then, after using the code for some time you want to be able to execute slightly more complex queries (like for example JOIN or sub queries). Then that piece of neat code, once running smoothly, started to degrade very fast.<br />
+
 <span id="more-3"></span></p>
 <h1>Database structure</h1>
 <p>Our sample database contains two message entries written by two different authors.</p>
